@@ -42,10 +42,10 @@ var barChart = svg.selectAll("rect")
     .enter()
     .append("rect")
     .attr("y", function(d) {
-        return svgHeight - d;
+        return svgHeight - d
     })
     .attr("height", function(d) {
-        return (d);
+        return d;
     })
     .attr("width", barWidth - barPadding)
     .attr("transform", function(d, i) {

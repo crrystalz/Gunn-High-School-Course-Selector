@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Shojumaru&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- Put Icon Code Here -->
+    <title> Title </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+    <div id="progressbar"></div>
+    <div id="scrollbar"></div>
+
+    <header class="header">
+
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Title</span>
+                <span class="heading-primary-sub">Rrishi Anand</span>
+            </h1>
+
+        </div>
+
+    </header>
+
+    <table style="width:100%">
+
+        <tr>
+
+            <td>
+
+                <p id="footer">Rrishi Anand</p>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script>
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function() {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%"
+
+        }
+    </script>
+
+</body>
+
+</html>

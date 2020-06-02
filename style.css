@@ -1,0 +1,187 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background-image: url('https://wallpaperplay.com/walls/full/0/2/4/67933.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Shojumaru', cursive;
+    color: #569967;
+}
+
+h2 {}
+
+h3 {
+    color: #9374e8;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer {
+    font-size: 40px;
+}
+
+table {
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+}
+
+section {
+    border-radius: 40px;
+    width: 80%;
+    height: 8in;
+    padding: 0.1in;
+    margin: 0.15in;
+    background-image: url('https://art.pixilart.com/71406ad5064e4f0.gif');
+    box-shadow: 0 0 10px 4px black;
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient( to right bottom, rgba(80, 0, 255, 0.8), rgba(110, 0, 255, 0.8)), url();
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*
+    animation-delay: 3s
+    animation-iteration-count: : 3;
+    */
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
